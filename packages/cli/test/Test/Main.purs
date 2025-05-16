@@ -9,6 +9,6 @@ import Test.Spec.Reporter (consoleReporter)
 import Test.Spec.Runner.Node (runSpecAndExitProcess)
 
 main :: Effect Unit
-main = runSpecAndExitProcess [consoleReporter] do
+main = runSpecAndExitProcess [ consoleReporter ] do
   it "should be added some test suits" do
     42 `shouldEqual` (40 + 2)

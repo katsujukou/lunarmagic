@@ -1,0 +1,9 @@
+{
+  "name": "@lunarmagic/framework",
+  "type": "module",
+  "scripts": {
+    "compile": "cd ../.. && spago build -p lunarmagic",
+    "test": "cd ../.. && spago test -p lunarmagic",
+    "check": "purs-tidy check ./src ./test"
+  }
+}

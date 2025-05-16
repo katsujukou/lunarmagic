@@ -1,8 +1,4 @@
 {
   "name": "lunarmagic-workspace",
-  "private": "true",
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ]
+  "private": "true"
 }

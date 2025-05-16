@@ -1,0 +1,9 @@
+{
+  "name": "@lunarmagic/cli",
+  "type": "module",
+  "scripts": {
+    "compile": "cd ../.. && spago build -p cli",
+    "test": "cd ../.. && spago test -p cli",
+    "check": "purs-tidy check ./src ./test"
+  }
+}
