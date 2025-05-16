@@ -1,0 +1,10 @@
+package:
+  name: lunarmagic
+  dependencies:
+    - prelude
+    - typelevel-prelude
+  test:
+    main: Test.LunarMagic
+    dependencies:
+      - spec
+      - spec-node

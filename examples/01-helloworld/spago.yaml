@@ -1,0 +1,6 @@
+package:
+  name: example-helloworld
+  dependencies:
+    - effect
+    - lunarmagic
+    - prelude

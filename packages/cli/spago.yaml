@@ -1,0 +1,13 @@
+package: 
+  name: cli 
+  dependencies:
+    - argparse-basic
+    - console
+    - effect
+    - prelude
+    - run
+  test:
+    main: Test.Main
+    dependencies:
+      - spec 
+      - spec-node
