@@ -259,6 +259,23 @@
             "unsafe-coerce"
           ]
         }
+      },
+      "typelevel-extra": {
+        "path": "packages/typelevel-extra",
+        "core": {
+          "dependencies": [
+            "typelevel-prelude"
+          ],
+          "build_plan": [
+            "prelude",
+            "type-equality",
+            "typelevel-prelude"
+          ]
+        },
+        "test": {
+          "dependencies": [],
+          "build_plan": []
+        }
       }
     },
     "package_set": {

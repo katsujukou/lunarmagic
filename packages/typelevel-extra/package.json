@@ -1,0 +1,10 @@
+{
+  "name": "@lunarmagic/typelevel-extra",
+  "type": "module",
+  "scripts": {
+    "compile": "cd ../.. && spago build -p typelevel-extra",
+    "test": "echo \"No tests yet\" && exit 0",
+    "check": "purs-tidy check ./src",
+    "format": "purs-tidy format-in-place ./src"
+  }
+}

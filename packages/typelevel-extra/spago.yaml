@@ -1,0 +1,4 @@
+package: 
+  name: typelevel-extra 
+  dependencies: 
+    - typelevel-prelude
