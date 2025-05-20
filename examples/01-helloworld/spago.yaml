@@ -2,5 +2,7 @@ package:
   name: example-helloworld
   dependencies:
     - effect
+    - js-promise-aff
     - lunarmagic
     - prelude
+    - random
