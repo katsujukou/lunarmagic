@@ -8,12 +8,14 @@
             "argparse-basic",
             "console",
             "effect",
+            "lunarmagic",
             "prelude",
             "run"
           ],
           "build_plan": [
             "aff",
             "argparse-basic",
+            "arraybuffer-types",
             "arrays",
             "bifunctors",
             "catenable-lists",
@@ -29,18 +31,28 @@
             "exceptions",
             "exists",
             "foldable-traversable",
+            "foreign",
+            "foreign-object",
             "free",
+            "freeap",
             "functions",
             "functors",
             "gen",
+            "http-methods",
             "identity",
             "integers",
             "invariant",
+            "js-date",
+            "js-promise",
             "lazy",
             "lists",
+            "lunarmagic",
             "maybe",
+            "media-types",
             "newtype",
             "nonempty",
+            "now",
+            "nullable",
             "numbers",
             "ordered-collections",
             "orders",
@@ -58,10 +70,18 @@
             "transformers",
             "tuples",
             "type-equality",
+            "typelevel-extra",
             "typelevel-prelude",
             "unfoldable",
             "unsafe-coerce",
-            "variant"
+            "variant",
+            "web-dom",
+            "web-events",
+            "web-file",
+            "web-html",
+            "web-storage",
+            "web-streams",
+            "web-xhr"
           ]
         },
         "test": {
@@ -150,15 +170,80 @@
         "core": {
           "dependencies": [
             "effect",
-            "lunarmagic",
-            "prelude"
-          ],
-          "build_plan": [
-            "effect",
+            "js-promise-aff",
             "lunarmagic",
             "prelude",
+            "random"
+          ],
+          "build_plan": [
+            "aff",
+            "arraybuffer-types",
+            "arrays",
+            "bifunctors",
+            "catenable-lists",
+            "console",
+            "const",
+            "contravariant",
+            "control",
+            "datetime",
+            "distributive",
+            "effect",
+            "either",
+            "enums",
+            "exceptions",
+            "exists",
+            "foldable-traversable",
+            "foreign",
+            "foreign-object",
+            "free",
+            "freeap",
+            "functions",
+            "functors",
+            "gen",
+            "http-methods",
+            "identity",
+            "integers",
+            "invariant",
+            "js-date",
+            "js-promise",
+            "js-promise-aff",
+            "lazy",
+            "lists",
+            "lunarmagic",
+            "maybe",
+            "media-types",
+            "newtype",
+            "nonempty",
+            "now",
+            "nullable",
+            "numbers",
+            "ordered-collections",
+            "orders",
+            "parallel",
+            "partial",
+            "prelude",
+            "profunctor",
+            "random",
+            "record",
+            "refs",
+            "safe-coerce",
+            "st",
+            "strings",
+            "tailrec",
+            "transformers",
+            "tuples",
             "type-equality",
-            "typelevel-prelude"
+            "typelevel-extra",
+            "typelevel-prelude",
+            "unfoldable",
+            "unsafe-coerce",
+            "web-dom",
+            "web-events",
+            "web-file",
+            "web-html",
+            "web-storage",
+            "web-streams",
+            "web-xhr"
           ]
         },
         "test": {
@@ -167,16 +252,86 @@
         }
       },
       "lunarmagic": {
-        "path": "packages/framework",
+        "path": "packages/lunarmagic",
         "core": {
           "dependencies": [
+            "console",
+            "foreign",
+            "foreign-object",
+            "free",
+            "freeap",
             "prelude",
-            "typelevel-prelude"
+            "record",
+            "typelevel-extra",
+            "typelevel-prelude",
+            "web-file",
+            "web-streams",
+            "web-xhr"
           ],
           "build_plan": [
+            "arraybuffer-types",
+            "arrays",
+            "bifunctors",
+            "catenable-lists",
+            "console",
+            "const",
+            "contravariant",
+            "control",
+            "datetime",
+            "distributive",
+            "effect",
+            "either",
+            "enums",
+            "exceptions",
+            "exists",
+            "foldable-traversable",
+            "foreign",
+            "foreign-object",
+            "free",
+            "freeap",
+            "functions",
+            "functors",
+            "gen",
+            "http-methods",
+            "identity",
+            "integers",
+            "invariant",
+            "js-date",
+            "js-promise",
+            "lazy",
+            "lists",
+            "maybe",
+            "media-types",
+            "newtype",
+            "nonempty",
+            "now",
+            "nullable",
+            "numbers",
+            "ordered-collections",
+            "orders",
+            "partial",
             "prelude",
+            "profunctor",
+            "record",
+            "refs",
+            "safe-coerce",
+            "st",
+            "strings",
+            "tailrec",
+            "transformers",
+            "tuples",
             "type-equality",
-            "typelevel-prelude"
+            "typelevel-extra",
+            "typelevel-prelude",
+            "unfoldable",
+            "unsafe-coerce",
+            "web-dom",
+            "web-events",
+            "web-file",
+            "web-html",
+            "web-storage",
+            "web-streams",
+            "web-xhr"
           ]
         },
         "test": {
@@ -258,6 +413,87 @@
             "unfoldable",
             "unsafe-coerce"
           ]
+        }
+      },
+      "lunarmagic-openapi": {
+        "path": "packages/lunarmagic-openapi",
+        "core": {
+          "dependencies": [
+            "lunarmagic",
+            "prelude",
+            "typelevel-extra",
+            "typelevel-prelude"
+          ],
+          "build_plan": [
+            "arraybuffer-types",
+            "arrays",
+            "bifunctors",
+            "catenable-lists",
+            "console",
+            "const",
+            "contravariant",
+            "control",
+            "datetime",
+            "distributive",
+            "effect",
+            "either",
+            "enums",
+            "exceptions",
+            "exists",
+            "foldable-traversable",
+            "foreign",
+            "foreign-object",
+            "free",
+            "freeap",
+            "functions",
+            "functors",
+            "gen",
+            "http-methods",
+            "identity",
+            "integers",
+            "invariant",
+            "js-date",
+            "js-promise",
+            "lazy",
+            "lists",
+            "lunarmagic",
+            "maybe",
+            "media-types",
+            "newtype",
+            "nonempty",
+            "now",
+            "nullable",
+            "numbers",
+            "ordered-collections",
+            "orders",
+            "partial",
+            "prelude",
+            "profunctor",
+            "record",
+            "refs",
+            "safe-coerce",
+            "st",
+            "strings",
+            "tailrec",
+            "transformers",
+            "tuples",
+            "type-equality",
+            "typelevel-extra",
+            "typelevel-prelude",
+            "unfoldable",
+            "unsafe-coerce",
+            "web-dom",
+            "web-events",
+            "web-file",
+            "web-html",
+            "web-storage",
+            "web-streams",
+            "web-xhr"
+          ]
+        },
+        "test": {
+          "dependencies": [],
+          "build_plan": []
         }
       },
       "typelevel-extra": {
@@ -1197,6 +1433,17 @@
         "unsafe-coerce"
       ]
     },
+    "freeap": {
+      "type": "registry",
+      "version": "7.0.0",
+      "integrity": "sha256-T1VbmNxdNSKEgV4p8uFFv0F16cz+Xx1BkfF64etSdNI=",
+      "dependencies": [
+        "const",
+        "exists",
+        "gen",
+        "lists"
+      ]
+    },
     "functions": {
       "type": "registry",
       "version": "6.0.0",
@@ -1242,6 +1489,16 @@
         "unfoldable"
       ]
     },
+    "http-methods": {
+      "type": "registry",
+      "version": "6.0.0",
+      "integrity": "sha256-Orr7rbDGcp7qoqmUMXPRMjBx+C4jqOQcFe9+gE3nMgU=",
+      "dependencies": [
+        "either",
+        "prelude",
+        "strings"
+      ]
+    },
     "identity": {
       "type": "registry",
       "version": "6.0.0",
@@ -1285,6 +1542,29 @@
         "now"
       ]
     },
+    "js-promise": {
+      "type": "registry",
+      "version": "1.0.0",
+      "integrity": "sha256-kXNo5g9RJgPdrTuKRe5oG2kBIwPp+j5VDPDplqZBJzQ=",
+      "dependencies": [
+        "effect",
+        "exceptions",
+        "foldable-traversable",
+        "functions",
+        "maybe",
+        "prelude"
+      ]
+    },
+    "js-promise-aff": {
+      "type": "registry",
+      "version": "1.0.0",
+      "integrity": "sha256-s9kml9Ei74hKlMMg41yyZp4GkbmYUwaH+gBWWrdhwec=",
+      "dependencies": [
+        "aff",
+        "foreign",
+        "js-promise"
+      ]
+    },
     "lazy": {
       "type": "registry",
       "version": "6.0.0",
@@ -1322,6 +1602,15 @@
       "dependencies": [
         "control",
         "invariant",
+        "newtype",
+        "prelude"
+      ]
+    },
+    "media-types": {
+      "type": "registry",
+      "version": "6.0.0",
+      "integrity": "sha256-n/4FoGBasbVSYscGVRSyBunQ6CZbL3jsYL+Lp01mc9k=",
+      "dependencies": [
         "newtype",
         "prelude"
       ]
@@ -1630,6 +1919,15 @@
         "tuples"
       ]
     },
+    "random": {
+      "type": "registry",
+      "version": "6.0.0",
+      "integrity": "sha256-CJ611a35MPCE7XQMp0rdC6MCn76znlhisiCRgboAG+Q=",
+      "dependencies": [
+        "effect",
+        "integers"
+      ]
+    },
     "record": {
       "type": "registry",
       "version": "4.0.0",
@@ -1871,6 +2169,82 @@
         "record",
         "tuples",
         "unsafe-coerce"
+      ]
+    },
+    "web-dom": {
+      "type": "registry",
+      "version": "6.0.0",
+      "integrity": "sha256-1kSKWFDI4LupdmpjK01b1MMxDFW7jvatEgPgVmCmSBQ=",
+      "dependencies": [
+        "web-events"
+      ]
+    },
+    "web-events": {
+      "type": "registry",
+      "version": "4.0.0",
+      "integrity": "sha256-YDt8b6u1tzGtnWyNRodne57iO8FNSGPaTCVzBUyUn4k=",
+      "dependencies": [
+        "datetime",
+        "enums",
+        "foreign",
+        "nullable"
+      ]
+    },
+    "web-file": {
+      "type": "registry",
+      "version": "4.0.0",
+      "integrity": "sha256-1h5jPBkvjY71jLEdwVadXCx86/2inNoMBO//Rd3eCSU=",
+      "dependencies": [
+        "foreign",
+        "media-types",
+        "web-dom"
+      ]
+    },
+    "web-html": {
+      "type": "registry",
+      "version": "4.1.0",
+      "integrity": "sha256-ByqS/h1/yG+hjCOnOQp7L1QpIWzQENNKB1kaHtpEhlE=",
+      "dependencies": [
+        "js-date",
+        "web-dom",
+        "web-file",
+        "web-storage"
+      ]
+    },
+    "web-storage": {
+      "type": "registry",
+      "version": "5.0.0",
+      "integrity": "sha256-q+6lxcnfWxus0/nDeFVtF1V+tLehZvvXQ0cduYPLksY=",
+      "dependencies": [
+        "nullable",
+        "web-events"
+      ]
+    },
+    "web-streams": {
+      "type": "registry",
+      "version": "4.0.0",
+      "integrity": "sha256-02HgXIk6R+pU9fWOX42krukAI1QkCbLKcCv3b4Jq6WI=",
+      "dependencies": [
+        "arraybuffer-types",
+        "effect",
+        "exceptions",
+        "js-promise",
+        "nullable",
+        "prelude",
+        "tuples"
+      ]
+    },
+    "web-xhr": {
+      "type": "registry",
+      "version": "5.0.1",
+      "integrity": "sha256-3dbIPVG66S+hPrgEVnpD78hrGjE7qlBbsReWOz89Ios=",
+      "dependencies": [
+        "arraybuffer-types",
+        "datetime",
+        "http-methods",
+        "web-dom",
+        "web-file",
+        "web-html"
       ]
     }
   }

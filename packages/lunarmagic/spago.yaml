@@ -1,0 +1,20 @@
+package:
+  name: lunarmagic
+  dependencies:
+    - console
+    - foreign
+    - foreign-object
+    - free
+    - freeap
+    - prelude
+    - record
+    - typelevel-extra
+    - typelevel-prelude
+    - web-file
+    - web-streams
+    - web-xhr
+  test:
+    main: Test.LunarMagic
+    dependencies:
+      - spec
+      - spec-node
