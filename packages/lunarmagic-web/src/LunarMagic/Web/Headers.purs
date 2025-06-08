@@ -34,14 +34,14 @@ fromHeaders = unsafeCoerce
 foreign import data Headers :: Type
 
 foreign import newFn
-  :: Fn1
+  :: EffectFn1
        HeadersInit
        Headers
 
-new :: HeadersInit -> Headers
-new = runFn1 newFn
+new :: HeadersInit -> Effect Headers
+new = runEffectFn1 newFn
 
-empty :: Headers
+empty :: Effect Headers
 empty = new $ fromRecord {}
 
 foreign import appendFn :: EffectFn3 String String Headers Unit

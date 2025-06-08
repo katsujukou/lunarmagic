@@ -3,6 +3,7 @@ module Test.LunarMagic.Web where
 import Prelude
 
 import Effect (Effect)
+import Test.LunarMagic.Web.Headers as Headers
 import Test.LunarMagic.Web.Request as Request
 import Test.LunarMagic.Web.URL as URL
 import Test.Spec.Reporter (consoleReporter)
@@ -12,3 +13,4 @@ main :: Effect Unit
 main = runSpecAndExitProcess [ consoleReporter ] do
   URL.spec
   Request.spec
+  Headers.spec
