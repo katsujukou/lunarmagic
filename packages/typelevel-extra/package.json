@@ -1,0 +1,10 @@
+{
+  "name": "@purescript-lunarmagic/typelevel-extra",
+  "type": "module",
+ "scripts": {
+    "compile": "cd ../.. && spago build -p typelevel-extra",
+    "test": "cd ../.. && spago test -p typelevel-extra",
+    "format": "purs-tidy format-in-place src test",
+    "check": "purs-tidy check src test"
+  }
+}

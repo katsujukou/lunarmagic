@@ -1,0 +1,10 @@
+{
+  "name": "@purescript-lunarmagic/lunarmagic-web",
+  "type": "module",
+ "scripts": {
+    "compile": "cd ../.. && spago build -p lunarmagic-web",
+    "test": "cd ../.. && spago test -p lunarmagic-web",
+    "format": "purs-tidy format-in-place src test",
+    "check": "purs-tidy check src test"
+  }
+}

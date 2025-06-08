@@ -1,0 +1,10 @@
+package:
+  name: typelevel-extra
+  dependencies:
+      - prelude
+      - typelevel-prelude
+  test:
+    main: Test.Type.Extra
+    dependencies:
+      - effect
+      - console

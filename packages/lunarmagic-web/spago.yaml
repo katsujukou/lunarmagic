@@ -1,0 +1,18 @@
+package:
+  name: lunarmagic-web
+  dependencies:
+    - aff
+    - foreign
+    - functions
+    - js-promise-aff
+    - prelude
+    - web-file
+    - web-streams
+    - web-xhr
+  test:
+    main: Test.LunarMagic.Web 
+    dependencies:
+      - fmt
+      - codec-argonaut
+      - spec 
+      - spec-node
